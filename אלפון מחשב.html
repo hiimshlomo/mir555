@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"> <!-- שפה וכיוון -->
+<!-- Injection By NetFree -->
+<script src="//wfapi.internal.netfree.link/wifree/go-install-wifree" type="text/javascript"  ></script>
+
+<html lang="en" dir="rtl">
+<head>
+<META HTTPEQUIV="ContentType" CONTENT="text/html; charset=windows-1255">
+	<title> אלפון ישיבת מיר ברכפלד </title> <!-- כותרת ראשית -->
+	<meta  name="author"  
+	 content="moshe freudiger"> <!-- פרטי המחבר -->
+	<meta charset="utf-8" 
+	name="viewport" 
+	content="width=device-width,
+	initialscale=1.0"><!-- התאמת הרקע וקידוד -->
+   <meta name="description"
+	content=' אלפון ישיבת מיר ברכפלד תשפ"ג ' > 
+   </meta>
+
+<style>
+	a.new:link{background-color:rgb( 0, 225, 255);}
+         a.new:visited{background-color:rgb(0, 225, 255);}
+         a.new:hover{background-color:rgb(0, 210, 255);}
+        
+	.mazel{
+          position:fixed;
+          bottom:25px;
+          left:25px;
+		  
+      }
+	.return{
+          position: fixed;
+          bottom:25px;
+          right:25px;
+		
+      }
+
+.r {
+  color:#800080;
+  text-decoration: none;
+  font-size:16px;
+}
+
+
+TD {margin: 0px 0 0px 0; background-color: #ffffbf; width: 230px; text-align: center; }
+
+.nkbutton { width: 23px; height: 26px; margin: 0 0 3px 0; padding: 0px; outline: none; 
+                  letter-spacing: 1px; border:block;font-size:20px; color: #ff8000; background-color: #80ffff; border-radius: 2px;} 
+.nkbutton1 { width: 150px; height: 21px; margin: 0 0 5px 0; padding: 0px; outline: none; 
+                  letter-spacing: 1px; border:none ;font-weight:900 ;font-size:15px; color: #ff4000; background-color: #ADFF2F; border-radius: 20px;} 
+.nkbutton2 { width: 87%; margin: 0 4px 120px 0; padding: 0px; outline: none;font-size:20px;
+                  letter-spacing: 1px; border:none; color: #fff; background-color: #ff4000; border-radius: 20px;} 
+.nkbutton3 { width:100%; height: 21px; margin: 0 0 5px 0; padding: 0px; outline: none; 
+                  letter-spacing: 1px; border:none ;font-weight:900 ;font-size:15px; color: #ff4000; background-color: #ADFF2F; border-radius: 20px;} 
+.nkbutton4 { display:inline-block; background-color: #0080ff; color:#ffffff; width:91%;margin: 0 1px 0px 0; margin-bottom:5px}
+.nkbutton5 { width: 150px; height: 24px; margin: 0 0 5px 0; padding: 0px; outline: none;
+                  letter-spacing: 1px; border:none ;font-size:20px; color: #bf8000; background-color: #ffffff; border-radius: 20px;} 
+
+.mdbox {
+	position: fixed;
+	background-color: #bf8000;
+	width: 96%;
+	padding: 5px; 
+	left: 2%; 
+	top: 20px; 
+	color:#fff; 
+	text-align: center; 
+	visibility: hidden;
+	display: none; 
+	border-radius: 15px; 
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px; 
+	-o-border-radius: 15px; 
+    -o-border-radius topleft: 15px;  **//for Opera and Iphone5 Mobile**
+    -o-border-radius topright: 15px;
+    -o-border-radius bottomleft: 15px;
+    -o-border-radius bottomright: 15px;	
+	.button { text-align: center; }
+	}
+
+.waitbox {
+	position: fixed;
+	background-color: #474D6D;
+	width: 96%;
+	padding: 5px; 
+	left: 2%; 
+	top: 60px; 
+	color: #fff; 
+	text-align: center; 
+	display: none; 
+	}
+
+
+.myTable {
+	margin-bottom: 0px;
+	}
+
+
+.mainbox {
+	background-color: #008080;
+	position: fixed;
+	width: 96%;
+	padding: 0px; 
+	left: 2%; 
+	top: 5px; 
+	color: #ffffff; 
+	text-align: center; 
+	visibility: visible;
+	display: block; 
+	margin: 0 ;
+	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.4);
+	.button { text-align: center; }
+	padding: 0px; 
+	}
+
+.mainbox3 {
+	color: #8C1B90;
+	position: fixed;
+	width: 96%;
+	top: 5px; 
+	text-align: center; 
+	.button { text-align: center; }
+	}
+
+
+
+
+
+.botbox {
+	position: fixed;
+	width: 100%;
+	padding: 1px; 
+	left: 0%; 
+	bottom: 0; 
+	color: #fff; 
+	text-align: center; 
+	display: none; 
+	margin: 0 ;
+	.button { text-align: center; }
+	}
+
+</style>
+
+<script>
+
+var tobi;
+
+
+function ShowMdbox(ag) {
+	document.getElementById("myMsg").innerHTML = ag;
+	var x = document.getElementById("myMdbox");
+	x.style.display = "block";
+	x.style.visibility = "visible";
+	document.getElementById("hdd").focus();
+	Scrollarount(5);
+	Scrollarount(-5);
+ }
+
+function HideMdbox(ab) {
+	var z = document.getElementById("myMdbox");
+	z.style.visibility = "hidden";
+	z.style.display = "none";
+	Scrollarount(5);
+	Scrollarount(-5);
+ }
+
+
+function ShowWaitbox() {
+	var x = document.getElementById("myWaitbox");
+	x.style.display = "block";
+	x.style.visibility = "visible";
+	Scrollarount(10);
+	Scrollarount(-10);
+ }
+
+function HideWaitbox() {
+	var z = document.getElementById("myWaitbox");
+	z.style.visibility = "hidden";
+	z.style.display = "none";
+	Scrollarount(10);
+	Scrollarount(-10);
+ }
+
+function HideAllList() {
+	HideMdbox();
+	var childDivs = document.getElementById('myTable7').getElementsByTagName('tr');
+
+	for( i=0; i< childDivs.length; i++ )
+	{
+	 var childDiv = childDivs[i];
+	childDiv.style.display = "none";
+	}	
+document.getElementById("myBotbox").style.display="none";
+ }
+
+
+function ShowAllList() {
+	HideMdbox();
+	var childDivs = document.getElementById('myTable7').getElementsByTagName('tr');
+
+	for( i=0; i< childDivs.length; i++ )
+	{
+	 var childDiv = childDivs[i];
+	childDiv.style.display = "block";
+	}	
+ }
+function HideBotBox() {
+HideMdbox();
+		document.getElementById("myTable7").style.display="none";
+	
+}
+
+
+
+function clearInput() { document.getElementById('myInput').value = "" ; }
+
+
+function GoTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+function Scrollarount(ag) { window.scrollBy(0, ag); }
+
+
+
+function Alef(ag) { 
+	
+
+}
+
+function alert(ag) {
+	var x = ag.replace(/\n/gi, "<br>");
+	ShowMdbox(x) ;
+	document.getElementById("myBotbox1").style.display="none";
+	}
+
+function StartSearch() {
+	var iinp = document.getElementById("myInput").value;
+	if (iinp.length < 3) { 
+		document.getElementById("myInput").value = "יש להזין מינימום 3 תווים"
+		return; 
+	}
+	document.getElementById("myMainbox").style.display = "none";
+	ShowWaitbox();
+	<!-- console.log(Search()); -->
+	<!-- setTimeout(Search(), 5000); -->
+	Search();
+}
+
+function Search() {
+
+	document.getElementById("myMainbox").style.display="none";
+	document.getElementById("myTable7").style.display="none";
+	document.getElementById("myBotbox1").style.display="block";
+	
+  var input, filter, table,table1, tr, td, i, txtValue ;
+  var cnt = 0 ;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable7");
+
+
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+		cnt = cnt + 1 ;
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+  document.getElementById("myTable7").style.display="block";
+document.getElementById("myBotbox1").style.display="block";
+  document.getElementById("myMainbox1").style.display="block";
+  HideWaitbox();
+
+  if (cnt == 0)  {  document.getElementById("myBotbox").style.display="block";
+document.getElementById('myMainbox').style.display="block";
+document.getElementById("myBotbox1").style.display="none"; }
+}
+
+</script>
+
+</head>
+
+<body dir="rtl">
+
+<div class="mdbox" id="myMdbox"  onclick="HideMdbox('');
+document.getElementById('myBotbox1').style.display='block';">
+    <p id="myMsg"></p>
+    <button class="nkbutton5" id="hdd" autofocus onclick="HideMdbox('');
+	document.getElementById('myBotbox1').style.display='block';"
+	style="text-align:center;">אישור</button>
+</div>
+
+
+<div class="waitbox" id="myWaitbox">
+    <p>נא המתן ...</p>
+</div>
+
+
+<div class="mainbox" id="myMainbox" >
+	<div style="margin: 0px; text-align:right; font-size:8px;"><br></div>
+		<div style="margin: 0px; text-align:right; font-size:11px;">&nbsp;&nbsp;בס"ד</div>
+		<p style="margin: 0px; font-size:23px;">אלפון ישיבת מיר ברכפלד</p><br>
+		<p style="margin: 0px; font-size:23px;"> תשפ"ג </p>
+	<br>
+	
+    <input id="myInput" Class="nkbutton4" type="text" onchange="StartSearch()" onfocus="clearInput()"  placeholder="הזן לפחות 3 תווים" title="הזן שם פרטי/משפחה/טלפון/כתובת/מייל" value="הזן שם או מספר" >
+	<input type="button" value="חפש" onclick="StartSearch()">  </input>
+	<p style="margin: 0px; font-size:14px;">הזן שם פרטי/ שם משפחה/ טלפון/ וועד <br>הזן מינימום 3 תווים ולחץ על אישור</p>
+<br><p style="margin: 0px; font-size:12px;">&copy; כל הזכויות שמורות</p>
+	<p style="margin: 0px; font-size:10px;">גירסה 1.0.0<BR><BR>
+</div>
+
+
+<div class="botbox" id="myBotbox" >
+	<button class="nkbutton2" onclick="HideBotBox();HideAllList();
+	document.getElementById('myTable7').style.display='none';
+	document.getElementById('myMainbox').style.display='block';
+	document.getElementById('myMainbox1').style.display='none';
+
+	">לא נמצאו רשומות</button>
+</div>
+
+<!----------------------------------------------------->
+<div class="mainbox3" id="myBotbox1" style="display: none;">	
+	<button class="nkbutton3" id="myMainbox1"onclick="HideBotBox();
+	document.getElementById('myTable7').style.display='none';
+	document.getElementById('myMainbox').style.display='block';
+	document.getElementById('myMainbox1').style.display='none'; ">חזור לחיפוש</button>
+	
+</div>
+
+<table BORDER id="myTable7" style="display: none;"><BR>
+	<tr><td><a class=r>אוירבעך ר' אריה לייב<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4125499">050-4125499</A><br></td></tr>
+		<tr><td><a class=r>אלון מורינו רה"י ר' נועם<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:02-5820901">02-5820901</A><br></td></tr>
+		<tr><td><a class=r>בלומנטל ר' יעקב<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4103236">053-4103236</A><br></td></tr>
+		<tr><td><a class=r>ברכפלד ר' דוד<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8430990">054-8430990</A><br></td></tr>
+		<tr><td><a class=r>ברנשטיין ר' משה מאיר<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4197439">050-4197439</A><br></td></tr>
+		<tr><td><a class=r>גודלבסקי ר' אליהו<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4193205">050-4193205</A><br></td></tr>
+		<tr><td><a class=r>גינסברגר ר' יוסף<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7632431">052-7632431</A><br></td></tr>
+		<tr><td><a class=r>גרבוז ר' אריה<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7612829">052-7612829</A><br></td></tr>
+		<tr><td><a class=r>גרשון ר' ברוך<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8438931">054-8438931</A><br></td></tr>
+		<tr><td><a class=r>הילדסהיימר ר' אליהו<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4104125">050-4104125</A><br></td></tr>
+		<tr><td><a class=r>הכסטר מורינו המשגיח ר' ראובן<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:08-974456">08-974456</A><br></td></tr>
+		<tr><td><a class=r>וייס ר' אהרון<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4174740">050-4174740</A><br></td></tr>
+		<tr><td><a class=r>וינגרטן ר' דוד<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:02-5869343">02-5869343</A><br></td></tr>
+		<tr><td><a class=r>זייציק ר' אליהו<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4153030">050-4153030</A><br></td></tr>
+		<tr><td><a class=r>זילבר ר' יחזקאל<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4102180">050-4102180</A><br></td></tr>
+		<tr><td><a class=r>זינגר ר' יעקב<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7618680">052-7618680</A><br></td></tr>
+		<tr><td><a class=r>זליבנסקי ר' פנחס<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7628303">052-7628303</A><br></td></tr>
+		<tr><td><a class=r>זריצקי ר' עקיבא<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7132358">052-7132358</A><br></td></tr>
+		<tr><td><a class=r>נוימן ר' רפאל<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7135023">052-7135023</A><br></td></tr>
+		 	<tr><td><a class=r>סגל ר' אברהם<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8473907">054-8473907</A><br></td></tr>
+		<tr><td><a class=r>פיין ר' יחזקאל<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7680943">052-7680943</A><br></td></tr>
+		<tr><td><a class=r>פינקל ר' יוסף<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4141103">050-4141103</A><br></td></tr>
+		<tr><td><a class=r>פרצוביץ מורינו רה"י ר' צבי<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7117361">052-7117361</A><br></td></tr>
+		<tr><td><a class=r>קוגל ר' דוד<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8482918">054-8482918</A><br></td></tr>
+		<tr><td><a class=r>רביץ ר' משה<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7624571">052-7624571</A><br></td></tr>
+		<tr><td><a class=r>רוב ר' אפריים<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4101593">050-4101593</A><br></td></tr>
+		<tr><td><a class=r>רוטנברג ר' מרדכי<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8410901">054-8410901</A><br></td></tr>
+		<tr><td><a class=r>רוטשילד ר' אליהו<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:02-5815077">02-5815077</A><br></td></tr>
+		<tr><td><a class=r>שיר ר' אריה<br>רבנים<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7688746">052-7688746</A><br></td></tr>
+		<tr><td><a class=r>אורבך שמואל<br>קיבוץ<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4151488">050-4151488</A><br></td></tr>
+		<tr><td><a class=r>בר אור יהודה<br>קיבוץ<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8406656">054-8406656</A><br></td></tr>
+		<tr><td><a class=r>בצלאל נחמיה<br>צוות<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7138803">052-7138803</A><br></td></tr>
+		<tr><td><a class=r>גולדשטיין דוד<br>צוות<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4141108">050-4141108</A><br></td></tr>
+		<tr><td><a class=r>גירון נתן<br>צוות<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3156758">053-3156758</A><br></td></tr>
+		<tr><td><a class=r>גריינמן ישראל<br>צוות<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4150050">050-4150050</A><br></td></tr>
+		<tr><td><a class=r>גרנדש שעייה<br>צוות<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4141102">050-4141102</A><br></td></tr>
+		<tr><td><a class=r>לוי יוסף<br>צוות<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4141106">050-4141106</A><br></td></tr>
+		<tr><td><a class=r>פליישמן זאבי<br>צוות<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4142291">050-4142291</A><br></td></tr>
+		<tr><td><a class=r>גור מיכאל<br>ועד יב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3223078">058-3223078</A><br></td></tr>
+		<tr><td><a class=r>פופר שמעון<br>ועד יב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3158672">053-3158672</A><br></td></tr>
+		<tr><td><a class=r>ורדי עמנואל<br>ועד יא<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8420709">054-8420709</A><br></td></tr>
+		<tr><td><a class=r>סולבייציק יוסף<br>ועד יא<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7167128">052-7167128</A><br></td></tr>
+		<tr><td><a class=r>פריימן אברהם<br>ועד יא<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3291500">058-3291500</A><br></td></tr>
+		<tr><td><a class=r>בן פורת יוסף<br>ועד עשירי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8532146">054-8532146</A><br></td></tr>
+		 		<tr><td><a class=r>ברבי בנימין<br>ועד עשירי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8539282">054-8539282</A><br></td></tr>
+		<tr><td><a class=r>הירש איתמר<br>ועד עשירי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-5430785">052-5430785</A><br></td></tr>
+		<tr><td><a class=r>זלסקו צבי<br>ועד עשירי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3137852">053-3137852</A><br></td></tr>
+		<tr><td><a class=r>פריימן ראובן יוסף<br>ועד עשירי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:02-6518004">02-6518004</A><br></td></tr>
+		<tr><td><a class=r>רוזינבוים יצחק<br>ועד עשירי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3131516">053-3131516</A><br></td></tr>
+		<tr><td><a class=r>גולדברג דב<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3129341">053-3129341</A><br></td></tr>
+		<tr><td><a class=r>גלזר יוסף<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8409005">054-8409005</A><br></td></tr>
+		<tr><td><a class=r>זייט יוסף<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7652099">052-7652099</A><br></td></tr>
+		<tr><td><a class=r>חגי יחיאל<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8497616">054-8497616</A><br></td></tr>
+		<tr><td><a class=r>כהן שלמה<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3201431">058-3201431</A><br></td></tr>
+		<tr><td><a class=r>לנאל משה<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4109396">053-4109396</A><br></td></tr>
+		<tr><td><a class=r>לרנר אלחנן<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3288246">058-3288246</A><br></td></tr>
+		<tr><td><a class=r>קמפנר אריה<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3243330">058-3243330</A><br></td></tr>
+		<tr><td><a class=r>קניג נח<br>ועד תשיעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8538284">054-8538284</A><br></td></tr>
+		<tr><td><a class=r>בראון אברהם<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7165399">052-7165399</A><br></td></tr>
+		<tr><td><a class=r>ברלינר בנימין<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3232250">058-3232250</A><br></td></tr>
+		<tr><td><a class=r>גנץ ישראל<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3265245">058-3265245</A><br></td></tr>
+		<tr><td><a class=r>הקלמן יעקב<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3265448">058-3265448</A><br></td></tr>
+		<tr><td><a class=r>וינוגרד דניאל<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8422211">054-8422211</A><br></td></tr>
+		<tr><td><a class=r>זינגר שלמה<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3246558">058-3246558</A><br></td></tr>
+		<tr><td><a class=r>יוסוביץ בן ציון<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3291440">058-3291440</A><br></td></tr>
+		<tr><td><a class=r>מנצר חיים<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3279784">058-3279784</A><br></td></tr>
+		<tr><td><a class=r>נוקראי חיים<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3245331">058-3245331</A><br></td></tr>
+		<tr><td><a class=r>סימינובסקי שמואל<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8542538">054-8542538</A><br></td></tr>
+		<tr><td><a class=r>עובדיה אלחנן<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3124144">053-3124144</A><br></td></tr>
+		<tr><td><a class=r>פוקס יצחק<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7671992">052-7671992</A><br></td></tr>
+		<tr><td><a class=r>פרלין ראובן יוסף<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3145486">053-3145486</A><br></td></tr>
+		<tr><td><a class=r>קצנלבוגן בנימין<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4169011">050-4169011</A><br></td></tr>
+		<tr><td><a class=r>רוזן ראובן<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8526274">054-8526274</A><br></td></tr>
+		<tr><td><a class=r>רוזנר מיכאל<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3246758">058-3246758</A><br></td></tr>
+		<tr><td><a class=r>רום שמואל<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8482323">054-8482323</A><br></td></tr>
+		<tr><td><a class=r>שלוסברג יעקב<br>ועד שמיני<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7166489">052-7166489</A><br></td></tr>
+		<tr><td><a class=r>בוימל אברהם<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3260014">058-3260014</A><br></td></tr>
+		<tr><td><a class=r>בלס אברהם<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3261601">058-3261601</A><br></td></tr>
+		<tr><td><a class=r>בן פזי אריאל<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3247753">058-3247753</A><br></td></tr>
+		<tr><td><a class=r>בנימינוב יוסף חיים<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3233438">058-3233438</A><br></td></tr>
+		<tr><td><a class=r>ברוורמן אברהם<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6786762">055-6786762</A><br></td></tr>
+		<tr><td><a class=r>גולדשטיין יוסף<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3229972">058-3229972</A><br></td></tr>
+		<tr><td><a class=r>גלבוע יהודה<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3245627">058-3245627</A><br></td></tr>
+		<tr><td><a class=r>גלזר אריה<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4148366">050-4148366</A><br></td></tr>
+		<tr><td><a class=r>דיין שלמה ידידיה<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3229535">058-3229535</A><br></td></tr>
+		<tr><td><a class=r>הינמן רזיאל<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3280119">058-3280119</A><br></td></tr>
+		<tr><td><a class=r>ואינה עדן<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6760027">055-6760027</A><br></td></tr>
+		<tr><td><a class=r>זוזות אליהו<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6744402">055-6744402</A><br></td></tr>
+		<tr><td><a class=r>זר מרדכי<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7687673">052-7687673</A><br></td></tr>
+		<tr><td><a class=r>חגי בנימין<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8405945">054-8405945</A><br></td></tr>
+		<tr><td><a class=r>טורצקי דניאל פרץ<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3283768">058-3283768</A><br></td></tr>
+		<tr><td><a class=r>כהן בלוך איתן<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7107686">052-7107686</A><br></td></tr>
+		<tr><td><a class=r>כהנא צבי<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3253259">058-3253259</A><br></td></tr>
+		<tr><td><a class=r>לוסטיג צבי<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6790291">055-6790291</A><br></td></tr>
+		<tr><td><a class=r>ליפקה שלמה<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7163239">052-7163239</A><br></td></tr>
+		 		<tr><td><a class=r>מימרן משה<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3187377">053-3187377</A><br></td></tr>
+		<tr><td><a class=r>מנדלוביץ שלמה<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3293476">058-3293476</A><br></td></tr>
+		<tr><td><a class=r>מרק יצחק<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-760366">052-760366</A><br></td></tr>
+		<tr><td><a class=r>סגל דוד<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6780224">055-6780224</A><br></td></tr>
+		<tr><td><a class=r>פוקס יצחק<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3224054">058-3224054</A><br></td></tr>
+		<tr><td><a class=r>פרדמן נתנאל<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6797920">055-6797920</A><br></td></tr>
+		<tr><td><a class=r>שטיגליץ נתן<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6786634">055-6786634</A><br></td></tr>
+		<tr><td><a class=r>שטרן יאיר<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7628857">052-7628857</A><br></td></tr>
+		<tr><td><a class=r>שמואלביץ אברהם<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3295882">058-3295882</A><br></td></tr>
+		<tr><td><a class=r>שרייבמן שלמה<br>ועד שביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7178680">052-7178680</A><br></td></tr>
+		<tr><td><a class=r>אזולאי אשר<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7637811">052-7637811</A><br></td></tr>
+		<tr><td><a class=r>איזיקסון אריאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3234039">058-3234039</A><br></td></tr>
+		<tr><td><a class=r>אלון יוסף<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6773653">055-6773653</A><br></td></tr>
+		<tr><td><a class=r>אסייג דוד<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6773028">055-6773028</A><br></td></tr>
+		<tr><td><a class=r>אפשטיין פנחס<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8434350">054-8434350</A><br></td></tr>
+		<tr><td><a class=r>בר שאול מנחם<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3202037">058-3202037</A><br></td></tr>
+		<tr><td><a class=r>ברדע אסף<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7659821">052-7659821</A><br></td></tr>
+		<tr><td><a class=r>ברובנדר אריאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3237811">058-3237811</A><br></td></tr>
+		<tr><td><a class=r>בריקמן יונתן<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3156112">053-3156112</A><br></td></tr>
+		<tr><td><a class=r>גוטהולד ראובן<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4173037">050-4173037</A><br></td></tr>
+		<tr><td><a class=r>גולדין שמואל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6769728">055-6769728</A><br></td></tr>
+		<tr><td><a class=r>גייזלר ישראל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3247042">058-3247042</A><br></td></tr>
+		<tr><td><a class=r>גרוסמאן יצחק<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3297321">058-3297321</A><br></td></tr>
+		<tr><td><a class=r>גרינבוים יהודה<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7168618">052-7168618</A><br></td></tr>
+		<tr><td><a class=r>הלוי חננאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3208811">058-3208811</A><br></td></tr>
+		<tr><td><a class=r>זינגר שלום<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3236477">058-3236477</A><br></td></tr>
+		<tr><td><a class=r>חסון מאיר שלום<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3242949">058-3242949</A><br></td></tr>
+		<tr><td><a class=r>יהודיוף משה<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3200101">058-3200101</A><br></td></tr>
+		<tr><td><a class=r>יוגב רפאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7102736">052-7102736</A><br></td></tr>
+		<tr><td><a class=r>לוגסי מרדכי<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4156458">053-4156458</A><br></td></tr>
+		<tr><td><a class=r>ליכטמן בן ציון<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4147050">050-4147050</A><br></td></tr>
+		<tr><td><a class=r>מוריאל שמעון<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3260077">058-3260077</A><br></td></tr>
+		<tr><td><a class=r>מרציאנו יעקב ישראל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4147175">050-4147175</A><br></td></tr>
+		<tr><td><a class=r>נובק יהושע<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8450724">054-8450724</A><br></td></tr>
+		<tr><td><a class=r>סולי יעקב צבי<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3208212">058-3208212</A><br></td></tr>
+		<tr><td><a class=r>סמואל ידידיה<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7692051">052-7692051</A><br></td></tr>
+		<tr><td><a class=r>עמאר בצלאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3261776">058-3261776</A><br></td></tr>
+		<tr><td><a class=r>ענתבי עזרא<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3144623">053-3144623</A><br></td></tr>
+		<tr><td><a class=r>פאלק שלמה זלמן<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8467860">054-8467860</A><br></td></tr>
+		<tr><td><a class=r>פרובר יאיר<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3205290">058-3205290</A><br></td></tr>
+		<tr><td><a class=r>צדקה יהודה<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8438184">054-8438184</A><br></td></tr>
+		<tr><td><a class=r>קאהן יעקב<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7159611">052-7159611</A><br></td></tr>
+		<tr><td><a class=r>קויט דניאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3265231">058-3265231</A><br></td></tr>
+		<tr><td><a class=r>קולר אוריאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7698003">052-7698003</A><br></td></tr>
+		<tr><td><a class=r>קופולוביץ אהרון<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3271843">058-3271843</A><br></td></tr>
+		<tr><td><a class=r>קליין ישראל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8495878">054-8495878</A><br></td></tr>
+		<tr><td><a class=r>רדין ישראל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3207952">058-3207952</A><br></td></tr>
+		<tr><td><a class=r>רוט דוד<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7193747">052-7193747</A><br></td></tr>
+		<tr><td><a class=r>רוט מאיר<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3250296">058-3250296</A><br></td></tr>
+		<tr><td><a class=r>ריינר זאב<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3288187">058-3288187</A><br></td></tr>
+		<tr><td><a class=r>רינדר גבריאל<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3264810">058-3264810</A><br></td></tr>
+		 		<tr><td><a class=r>שטול אליהו<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6755003">055-6755003</A><br></td></tr>
+		<tr><td><a class=r>שטרייכר אליהו<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7115721">052-7115721</A><br></td></tr>
+		<tr><td><a class=r>שנברגר יוסף<br>ועד שישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3223179">058-3223179</A><br></td></tr>
+		<tr><td><a class=r>אדלר דוד<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3202219">058-3202219</A><br></td></tr>
+		<tr><td><a class=r>אטיאס ישי<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4138182">050-4138182</A><br></td></tr>
+		<tr><td><a class=r>אלחדד נתנאל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3207448">058-3207448</A><br></td></tr>
+		<tr><td><a class=r>אלפר בן ציון<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6762423">055-6762423</A><br></td></tr>
+		<tr><td><a class=r>אלקייס משה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7178391">052-7178391</A><br></td></tr>
+		<tr><td><a class=r>ארזי דוד<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8539747">054-8539747</A><br></td></tr>
+		<tr><td><a class=r>ביטון דוד<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8538824">054-8538824</A><br></td></tr>
+		<tr><td><a class=r>בן זקן יאיר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6723609">055-6723609</A><br></td></tr>
+		<tr><td><a class=r>בן חמו נתנאל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6788677">055-6788677</A><br></td></tr>
+		<tr><td><a class=r>בן ממן אברהם<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3139404">053-3139404</A><br></td></tr>
+		<tr><td><a class=r>בן פורת יהונתן<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8539839">054-8539839</A><br></td></tr>
+		<tr><td><a class=r>בר און יהודה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4106004">050-4106004</A><br></td></tr>
+		<tr><td><a class=r>ברקוביץ אליהו<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3289790">058-3289790</A><br></td></tr>
+		<tr><td><a class=r>גבאי דוד<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3221990">058-3221990</A><br></td></tr>
+		<tr><td><a class=r>גודמן נפתלי<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8572887">054-8572887</A><br></td></tr>
+		<tr><td><a class=r>גוטמן אברהם<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6731995">055-6731995</A><br></td></tr>
+		<tr><td><a class=r>גז אהרון<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4107744">050-4107744</A><br></td></tr>
+		<tr><td><a class=r>גלזר מרדכי<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4178366">050-4178366</A><br></td></tr>
+		<tr><td><a class=r>גרבי מאיר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8470145">054-8470145</A><br></td></tr>
+		<tr><td><a class=r>גרוס שמואל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3218901">058-3218901</A><br></td></tr>
+		<tr><td><a class=r>דינספרטיג אלחנן<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8503061">054-8503061</A><br></td></tr>
+		<tr><td><a class=r>דסקל דוד<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6773538">055-6773538</A><br></td></tr>
+		<tr><td><a class=r>דרשוביץ אהרון<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3238941">058-3238941</A><br></td></tr>
+		<tr><td><a class=r>הלפרין נתן<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3253262">058-3253262</A><br></td></tr>
+		<tr><td><a class=r>הרוש ישראל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3142771">053-3142771</A><br></td></tr>
+		<tr><td><a class=r>ווגשל חיים<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3292704">058-3292704</A><br></td></tr>
+		<tr><td><a class=r>וייס מרדכי<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3289411">058-3289411</A><br></td></tr>
+		<tr><td><a class=r>זק אברהם<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3153960">053-3153960</A><br></td></tr>
+		<tr><td><a class=r>חינקיס אבישי<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3200773">058-3200773</A><br></td></tr>
+		<tr><td><a class=r>יוחנן אברהם<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6778772">055-6778772</A><br></td></tr>
+		<tr><td><a class=r>כהן אברהם<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6773115">055-6773115</A><br></td></tr>
+		<tr><td><a class=r>כהן אהרון<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3265995">058-3265995</A><br></td></tr>
+		<tr><td><a class=r>כהן אלחנן<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8500232">054-8500232</A><br></td></tr>
+		<tr><td><a class=r>כהן שמואל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3258070">058-3258070</A><br></td></tr>
+		<tr><td><a class=r>כץ אלעזר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8486000">054-8486000</A><br></td></tr>
+		<tr><td><a class=r>לדרר משה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8430749">054-8430749</A><br></td></tr>
+		<tr><td><a class=r>לזרוביץ אהרון<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3261922">058-3261922</A><br></td></tr>
+		<tr><td><a class=r>ליבוביץ חיים שמשון<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3177579">053-3177579</A><br></td></tr>
+		<tr><td><a class=r>ליכטמן יונתן<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7675951">052-7675951</A><br></td></tr>
+		<tr><td><a class=r>מינקוביץ מרדכי<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8482353">054-8482353</A><br></td></tr>
+		<tr><td><a class=r>מלכא מאיר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:08-9741181">08-9741181</A><br></td></tr>
+		<tr><td><a class=r>מנדלוביץ אפרים<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7690327">052-7690327</A><br></td></tr>
+		<tr><td><a class=r>מרציאנו ישראל מאיר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3146294">053-3146294</A><br></td></tr>
+		<tr><td><a class=r>סולביץ דוד מיכאל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6786285">055-6786285</A><br></td></tr>
+		<tr><td><a class=r>סימינובסקי יצחק<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8500955">054-8500955</A><br></td></tr>
+		<tr><td><a class=r>עטיה גבריאל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3254464">058-3254464</A><br></td></tr>
+		<tr><td><a class=r>פורטנוי אליהו<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3204015">058-3204015</A><br></td></tr>
+		<tr><td><a class=r>פמיני יצחק<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3249053">058-3249053</A><br></td></tr>
+		 		<tr><td><a class=r>פנחסי יאיר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4138589">050-4138589</A><br></td></tr>
+		<tr><td><a class=r>פרוידיגר משה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8421555">054-8421555</A><br></td></tr>
+		<tr><td><a class=r>קינד משה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3101943">053-3101943</A><br></td></tr>
+		<tr><td><a class=r>קלאגי הלל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3273542">058-3273542</A><br></td></tr>
+		<tr><td><a class=r>קרייסמן ברוך<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3206355">058-3206355</A><br></td></tr>
+		<tr><td><a class=r>ראש דניאל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3224421">058-3224421</A><br></td></tr>
+		<tr><td><a class=r>רבי מאיר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8431016">054-8431016</A><br></td></tr>
+		<tr><td><a class=r>רוזמן גד<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8517826">054-8517826</A><br></td></tr>
+		<tr><td><a class=r>רום שמחה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8542725">054-8542725</A><br></td></tr>
+		<tr><td><a class=r>ריין אברהם<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3241974">058-3241974</A><br></td></tr>
+		<tr><td><a class=r>ריין מרדכי<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3268583">058-3268583</A><br></td></tr>
+		<tr><td><a class=r>שובר ישראל מאיר<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6764914">055-6764914</A><br></td></tr>
+		<tr><td><a class=r>שועה יהודה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7676614">052-7676614</A><br></td></tr>
+		<tr><td><a class=r>שחורי ישראל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3214507">058-3214507</A><br></td></tr>
+		<tr><td><a class=r>שמואלביץ יחזקאל<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6773120">055-6773120</A><br></td></tr>
+		<tr><td><a class=r>שפורן משה<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8404465">054-8404465</A><br></td></tr>
+		<tr><td><a class=r>שקלאר אלימלך<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4137693">050-4137693</A><br></td></tr>
+		<tr><td><a class=r>שראל אביעד<br>ועד חמישי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3269645">058-3269645</A><br></td></tr>
+		<tr><td><a class=r>אברהמס ישראל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8597534">054-8597534</A><br></td></tr>
+		<tr><td><a class=r>אדרי אלחנן<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6842494">055-6842494</A><br></td></tr>
+		<tr><td><a class=r>אדרי דוד<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7603327">052-7603327</A><br></td></tr>
+		<tr><td><a class=r>אהרונוב יוסף<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3253605">058-3253605</A><br></td></tr>
+		<tr><td><a class=r>אוחיון ישראל מאיר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8523395">054-8523395</A><br></td></tr>
+		<tr><td><a class=r>אוירבך אשר זאב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3289085">058-3289085</A><br></td></tr>
+		<tr><td><a class=r>אושינסקי דניאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8462940">054-8462940</A><br></td></tr>
+		<tr><td><a class=r>איצקוביץ איתמר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8466930">054-8466930</A><br></td></tr>
+		<tr><td><a class=r>אלפר בנימין<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6732423">055-6732423</A><br></td></tr>
+		<tr><td><a class=r>אלפר דוד<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8503650">054-8503650</A><br></td></tr>
+		<tr><td><a class=r>אלקריף מנחם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6778446">055-6778446</A><br></td></tr>
+		<tr><td><a class=r>בוטבול גבריאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3252751">058-3252751</A><br></td></tr>
+		<tr><td><a class=r>בוקסבוים זאב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3152518">053-3152518</A><br></td></tr>
+		<tr><td><a class=r>בורונשטיין שמעון<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3101521">053-3101521</A><br></td></tr>
+		<tr><td><a class=r>בללו נתנאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4114563">053-4114563</A><br></td></tr>
+		<tr><td><a class=r>בן ברוך ניסים<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4130406">053-4130406</A><br></td></tr>
+		<tr><td><a class=r>בקשי דורון שלמה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4144458">050-4144458</A><br></td></tr>
+		<tr><td><a class=r>בר ציון אפרים<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4132999">050-4132999</A><br></td></tr>
+		<tr><td><a class=r>ברזילי מנחם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3249913">058-3249913</A><br></td></tr>
+		<tr><td><a class=r>גבאי משה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8573410">054-8573410</A><br></td></tr>
+		<tr><td><a class=r>גלזמן שמעון<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8561491">054-8561491</A><br></td></tr>
+		<tr><td><a class=r>גנוט משה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6743985">055-6743985</A><br></td></tr>
+		<tr><td><a class=r>גסואן אלעזר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7623279">052-7623279</A><br></td></tr>
+		<tr><td><a class=r>גרודזינצקי אלחנן<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3268444">058-3268444</A><br></td></tr>
+		<tr><td><a class=r>גרטנר ישראל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3166432">053-3166432</A><br></td></tr>
+		<tr><td><a class=r>גרנות מרדכי<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3293687">058-3293687</A><br></td></tr>
+		<tr><td><a class=r>דהן נתנאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8421915">054-8421915</A><br></td></tr>
+		<tr><td><a class=r>דריין יאיר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3241441">058-3241441</A><br></td></tr>
+		<tr><td><a class=r>היילברון דב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6788558">055-6788558</A><br></td></tr>
+		<tr><td><a class=r>הילדסהימר עזריאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8553453">054-8553453</A><br></td></tr>
+		<tr><td><a class=r>העס אהרון<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7130055">052-7130055</A><br></td></tr>
+		<tr><td><a class=r>הקלמן דוד<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8506136">054-8506136</A><br></td></tr>
+		<tr><td><a class=r>הרשקוביץ יוסף<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3204632">058-3204632</A><br></td></tr>
+		 		<tr><td><a class=r>ווידן יעקב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6739956">055-6739956</A><br></td></tr>
+		<tr><td><a class=r>וייס מיכאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3209667">058-3209667</A><br></td></tr>
+		<tr><td><a class=r>וינברג אפרים<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8544533">054-8544533</A><br></td></tr>
+		<tr><td><a class=r>וינר אלעזר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6773202">055-6773202</A><br></td></tr>
+		<tr><td><a class=r>ויסקופף איתמר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3139141">053-3139141</A><br></td></tr>
+		<tr><td><a class=r>ויקטור יעקב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3283216">058-3283216</A><br></td></tr>
+		<tr><td><a class=r>זילבר מאיר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8543056">054-8543056</A><br></td></tr>
+		<tr><td><a class=r>זקס יהודה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3134602">053-3134602</A><br></td></tr>
+		<tr><td><a class=r>חורוזינסקי איתמר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3232899">058-3232899</A><br></td></tr>
+		<tr><td><a class=r>חמיאל אלעזר <br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4192264">053-4192264</A><br></td></tr>
+		<tr><td><a class=r>טויטו יוסף<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8566204">054-8566204</A><br></td></tr>
+		<tr><td><a class=r>יהודה בנימין<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3268030">058-3268030</A><br></td></tr>
+		<tr><td><a class=r>יוסף אברהם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3207345">058-3207345</A><br></td></tr>
+		<tr><td><a class=r>כהן אלעזר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6724822">055-6724822</A><br></td></tr>
+		<tr><td><a class=r>כהן יעקב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3200426">058-3200426</A><br></td></tr>
+		<tr><td><a class=r>כהן נתן צבי<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6741140">055-6741140</A><br></td></tr>
+		<tr><td><a class=r>כץ נתן<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3201781">058-3201781</A><br></td></tr>
+		<tr><td><a class=r>לאופר אשר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6778055">055-6778055</A><br></td></tr>
+		<tr><td><a class=r>לאופר שלום<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3235909">058-3235909</A><br></td></tr>
+		<tr><td><a class=r>לוי רפאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8533835">054-8533835</A><br></td></tr>
+		<tr><td><a class=r>לויליכט מאיר שמחה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3156998">053-3156998</A><br></td></tr>
+		<tr><td><a class=r>לוין מנחם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6733567">055-6733567</A><br></td></tr>
+		<tr><td><a class=r>לחובר נתנאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4198818">053-4198818</A><br></td></tr>
+		<tr><td><a class=r>ליפשיץ דב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4158645">053-4158645</A><br></td></tr>
+		<tr><td><a class=r>לנג שלום<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8449372">054-8449372</A><br></td></tr>
+		<tr><td><a class=r>מונק יחזקאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6707586">055-6707586</A><br></td></tr>
+		 		<tr><td><a class=r>מיזליק משה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4166975">050-4166975</A><br></td></tr>
+		<tr><td><a class=r>מילצקי מנחם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3234076">058-3234076</A><br></td></tr>
+		<tr><td><a class=r>מילר אורי<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7188069">052-7188069</A><br></td></tr>
+		<tr><td><a class=r>מיצמכר משה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3151303">053-3151303</A><br></td></tr>
+		<tr><td><a class=r>מרקוביץ אלעזר <br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3279270">058-3279270</A><br></td></tr>
+		<tr><td><a class=r>מרקוביץ מנחם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7137520">052-7137520</A><br></td></tr>
+		<tr><td><a class=r>ניימן משה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3296644">058-3296644</A><br></td></tr>
+		<tr><td><a class=r>נפחא מאיר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3288126">058-3288126</A><br></td></tr>
+		<tr><td><a class=r>סגל יצחק<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7112890">052-7112890</A><br></td></tr>
+		<tr><td><a class=r>סופר יעקב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8478380">054-8478380</A><br></td></tr>
+		<tr><td><a class=r>סיגל ראובן<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4194465">053-4194465</A><br></td></tr>
+		<tr><td><a class=r>סייפש אלכסנדר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4167467">050-4167467</A><br></td></tr>
+		<tr><td><a class=r>סנדלר יחזקאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4107601">053-4107601</A><br></td></tr>
+		<tr><td><a class=r>ספרא ישי<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6764834">055-6764834</A><br></td></tr>
+		<tr><td><a class=r>עטיה אלחנן<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3291149">058-3291149</A><br></td></tr>
+		<tr><td><a class=r>פולטוב יהודה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8550379">054-8550379</A><br></td></tr>
+		<tr><td><a class=r>פיונטק חיים<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3144670">053-3144670</A><br></td></tr>
+		<tr><td><a class=r>פיונטק יונה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4112832">053-4112832</A><br></td></tr>
+		<tr><td><a class=r>פיילעט ישעיה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4160724">050-4160724</A><br></td></tr>
+		<tr><td><a class=r>פינוס חיים<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3282568">058-3282568</A><br></td></tr>
+		<tr><td><a class=r>פינקל ביינוש<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4141105">050-4141105</A><br></td></tr>
+		<tr><td><a class=r>פלוצקי דוד<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3256217">058-3256217</A><br></td></tr>
+		<tr><td><a class=r>פרימק אריה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3240102">058-3240102</A><br></td></tr>
+		<tr><td><a class=r>צרור מאיר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6723253">055-6723253</A><br></td></tr>
+		<tr><td><a class=r>צרנובסקי דוד<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3115507">053-3115507</A><br></td></tr>
+		<tr><td><a class=r>קהן נפתלי<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3220017">058-3220017</A><br></td></tr>
+		<tr><td><a class=r>קובן יצחק מאיר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7680616">052-7680616</A><br></td></tr>
+		<tr><td><a class=r>קוקיס רפאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8402544">054-8402544</A><br></td></tr>
+		<tr><td><a class=r>קושלבסקי דוד<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4170664">050-4170664</A><br></td></tr>
+		<tr><td><a class=r>קליין יוסף<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4142768">053-4142768</A><br></td></tr>
+		<tr><td><a class=r>קנון שמואל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4108786">050-4108786</A><br></td></tr>
+		<tr><td><a class=r>קניאל אלחנן<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7137002">052-7137002</A><br></td></tr>
+		<tr><td><a class=r>קצנלבוגן שלמה<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:03-5705796">03-5705796</A><br></td></tr>
+		<tr><td><a class=r>קראם יאיר<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6737339">055-6737339</A><br></td></tr>
+		<tr><td><a class=r>רבינוביץ נתנאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3147229">053-3147229</A><br></td></tr>
+		<tr><td><a class=r>רוזנטל יוסף<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7614906">052-7614906</A><br></td></tr>
+		<tr><td><a class=r>רוטשטיין אברהם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3275100">058-3275100</A><br></td></tr>
+		<tr><td><a class=r>רפאלי רפאל<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8442231">054-8442231</A><br></td></tr>
+		<tr><td><a class=r>רפפורט יצחק<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6768336">055-6768336</A><br></td></tr>
+		<tr><td><a class=r>שטוקמן דב<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:02-5865174">02-5865174</A><br></td></tr>
+		<tr><td><a class=r>שכטר מרדכי<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6764071">055-6764071</A><br></td></tr>
+		<tr><td><a class=r>שראל אברהם<br>ועד רביעי<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3241213">058-3241213</A><br></td></tr>
+		<tr><td><a class=r>אברמס יאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3208466">058-3208466</A><br></td></tr>
+		<tr><td><a class=r>אוחיון אריאל שלום<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6778123">055-6778123</A><br></td></tr>
+		<tr><td><a class=r>אורליק דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6737608">055-6737608</A><br></td></tr>
+		<tr><td><a class=r>אזואלוס אברהם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6775388">055-6775388</A><br></td></tr>
+		<tr><td><a class=r>אזולאי מאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6732409">055-6732409</A><br></td></tr>
+		<tr><td><a class=r>אייזיקוביץ אברהם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7185898">052-7185898</A><br></td></tr>
+		<tr><td><a class=r>אייזיקס יאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8571501">054-8571501</A><br></td></tr>
+		<tr><td><a class=r>אייזנשטארק ישראל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7675511">052-7675511</A><br></td></tr>
+		<tr><td><a class=r>אייזנשטיין דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6736416">055-6736416</A><br></td></tr>
+		 		<tr><td><a class=r>אייפרמן יונתן<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4158488">050-4158488</A><br></td></tr>
+		<tr><td><a class=r>אלון שלמה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8505096">054-8505096</A><br></td></tr>
+		<tr><td><a class=r>אלוני אליסף<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7145251">052-7145251</A><br></td></tr>
+		<tr><td><a class=r>אליאך משה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3842271">058-3842271</A><br></td></tr>
+		<tr><td><a class=r>אסולין יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3246320">058-3246320</A><br></td></tr>
+		<tr><td><a class=r>אסייג רפאל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4134437">050-4134437</A><br></td></tr>
+		<tr><td><a class=r>ארזי יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8482414">054-8482414</A><br></td></tr>
+		<tr><td><a class=r>בארי מאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4146520">050-4146520</A><br></td></tr>
+		<tr><td><a class=r>בוימל ידידיה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3246150">058-3246150</A><br></td></tr>
+		<tr><td><a class=r>בטלר אברהם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3224417">058-3224417</A><br></td></tr>
+		<tr><td><a class=r>ביטון אברהם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8578562">054-8578562</A><br></td></tr>
+		<tr><td><a class=r>בינט מרדכי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6733312">055-6733312</A><br></td></tr>
+		<tr><td><a class=r>בירנבוים יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4185381">050-4185381</A><br></td></tr>
+		<tr><td><a class=r>בלכמן יצחק מרדכי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:08-9743217">08-9743217</A><br></td></tr>
+		<tr><td><a class=r>בסה מאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4123684">050-4123684</A><br></td></tr>
+		<tr><td><a class=r>בקשי דורון אליהו<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6722385">055-6722385</A><br></td></tr>
+		<tr><td><a class=r>ברגר צבי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7607730">052-7607730</A><br></td></tr>
+		<tr><td><a class=r>ברון משה <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8465309">054-8465309</A><br></td></tr>
+		<tr><td><a class=r>בריף נתן<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3150458">053-3150458</A><br></td></tr>
+		<tr><td><a class=r>ברק אלחנן<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4104815">050-4104815</A><br></td></tr>
+		<tr><td><a class=r>ברקובר אליהו<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7142883">052-7142883</A><br></td></tr>
+		<tr><td><a class=r>גודלבסקי יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8549299">054-8549299</A><br></td></tr>
+		<tr><td><a class=r>גוטסמן אלחנן<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4186248">053-4186248</A><br></td></tr>
+		<tr><td><a class=r>גוטשטיין יצחק<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3211208">058-3211208</A><br></td></tr>
+		<tr><td><a class=r>גולד אלעזר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4133845">050-4133845</A><br></td></tr>
+		<tr><td><a class=r>גולדברג צבי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3187946">053-3187946</A><br></td></tr>
+		<tr><td><a class=r>גולדשטיין מנחם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3206311">058-3206311</A><br></td></tr>
+		<tr><td><a class=r>גונן דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7178723">052-7178723</A><br></td></tr>
+		<tr><td><a class=r>גורן יצחק<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4116774">050-4116774</A><br></td></tr>
+		<tr><td><a class=r>גיטלר חיים<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3119424">053-3119424</A><br></td></tr>
+		<tr><td><a class=r>גלינסקי שמעון<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8573674">054-8573674</A><br></td></tr>
+		<tr><td><a class=r>גרוסמן דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3293152">058-3293152</A><br></td></tr>
+		<tr><td><a class=r>גרינבוים מאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3206714">058-3206714</A><br></td></tr>
+		<tr><td><a class=r>דויטש יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4140076">050-4140076</A><br></td></tr>
+		<tr><td><a class=r>דויטש שמעון<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4168068">050-4168068</A><br></td></tr>
+		<tr><td><a class=r>דינסטפרטיג פנחס<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4140815">053-4140815</A><br></td></tr>
+		<tr><td><a class=r>האוטלינג יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7616694">052-7616694</A><br></td></tr>
+		<tr><td><a class=r>הופמן מיכאל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3211314">058-3211314</A><br></td></tr>
+		<tr><td><a class=r>הירשלר אלעזר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8545079">054-8545079</A><br></td></tr>
+		<tr><td><a class=r>הס מרדכי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8448162">054-8448162</A><br></td></tr>
+		<tr><td><a class=r>הרמן ישראל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6720737">055-6720737</A><br></td></tr>
+		<tr><td><a class=r>וגנר יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3262744">058-3262744</A><br></td></tr>
+		<tr><td><a class=r>וולץ יאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6743007">055-6743007</A><br></td></tr>
+		<tr><td><a class=r>וידברג אלעזר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3293128">058-3293128</A><br></td></tr>
+		<tr><td><a class=r>וייס אלעזר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8498561">054-8498561</A><br></td></tr>
+		<tr><td><a class=r>זילבר אלחנן<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3235898">058-3235898</A><br></td></tr>
+		<tr><td><a class=r>חוגי דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:02-5867477">02-5867477</A><br></td></tr>
+		<tr><td><a class=r>טאובר מרדכי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3209756">058-3209756</A><br></td></tr>
+		<tr><td><a class=r>טוויל ישי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4143469">053-4143469</A><br></td></tr>
+		<tr><td><a class=r>טראובה אריה <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3246995">058-3246995</A><br></td></tr>
+		<tr><td><a class=r>טרנובסקי אריאל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3291570">058-3291570</A><br></td></tr>
+		 		<tr><td><a class=r>יוסבא חזקיהו<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6734898">055-6734898</A><br></td></tr>
+		<tr><td><a class=r>יעקובוביץ צבי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8438262">054-8438262</A><br></td></tr>
+		<tr><td><a class=r>ישראל שלמה <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4166885">050-4166885</A><br></td></tr>
+		<tr><td><a class=r>כהן דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3253118">058-3253118</A><br></td></tr>
+		<tr><td><a class=r>כהן יהושע<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3244032">058-3244032</A><br></td></tr>
+		<tr><td><a class=r>כהן ישראל מאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6741141">055-6741141</A><br></td></tr>
+		<tr><td><a class=r>כהן מרדכי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6737513">055-6737513</A><br></td></tr>
+		<tr><td><a class=r>לוי יעקב<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8572286">054-8572286</A><br></td></tr>
+		<tr><td><a class=r>לוינטל יעקב <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4148850">053-4148850</A><br></td></tr>
+		<tr><td><a class=r>ליפנר אלעזר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7100605">052-7100605</A><br></td></tr>
+		<tr><td><a class=r>מורלי רפאל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6709443">055-6709443</A><br></td></tr>
+		<tr><td><a class=r>מושקוביץ משה <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3262802">058-3262802</A><br></td></tr>
+		<tr><td><a class=r>מטה צבי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3210888">058-3210888</A><br></td></tr>
+		<tr><td><a class=r>מייקאף ישראל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3267713">058-3267713</A><br></td></tr>
+		<tr><td><a class=r>מילר אביגדור <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4164689">053-4164689</A><br></td></tr>
+		<tr><td><a class=r>ממן ישראל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4123025">050-4123025</A><br></td></tr>
+		<tr><td><a class=r>מן אילעי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4108566">050-4108566</A><br></td></tr>
+		<tr><td><a class=r>מנדלבוים ברוך<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3271397">058-3271397</A><br></td></tr>
+		<tr><td><a class=r>נוה דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3275373">058-3275373</A><br></td></tr>
+		<tr><td><a class=r>נויזץ יאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4167855">050-4167855</A><br></td></tr>
+		<tr><td><a class=r>נוסבכר אברהם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3276675">058-3276675</A><br></td></tr>
+		<tr><td><a class=r>סושארד טוביה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8547799">054-8547799</A><br></td></tr>
+		<tr><td><a class=r>סלומון דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6746418">055-6746418</A><br></td></tr>
+		<tr><td><a class=r>סלומון שמשון<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6740560">055-6740560</A><br></td></tr>
+		<tr><td><a class=r>סמוטני יוסי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8502346">054-8502346</A><br></td></tr>
+		<tr><td><a class=r>עובדיה אריאל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3257130">058-3257130</A><br></td></tr>
+		<tr><td><a class=r>עוקשי חיים<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8447203">054-8447203</A><br></td></tr>
+		<tr><td><a class=r>עמר בן ציון <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4130607">053-4130607</A><br></td></tr>
+		<tr><td><a class=r>פינצ’ובר שמואל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6735429">055-6735429</A><br></td></tr>
+		<tr><td><a class=r>פרדמן איתמר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3257751">058-3257751</A><br></td></tr>
+		<tr><td><a class=r>פרידליס משה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4151779">053-4151779</A><br></td></tr>
+		<tr><td><a class=r>פרידמן אלעזר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3267375">058-3267375</A><br></td></tr>
+		<tr><td><a class=r>פרידמן דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6708086">055-6708086</A><br></td></tr>
+		<tr><td><a class=r>פריידמן יהודא<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3244718">058-3244718</A><br></td></tr>
+		<tr><td><a class=r>פרץ ישראל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3238717">058-3238717</A><br></td></tr>
+		<tr><td><a class=r>קיסטר קובי<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8561312">054-8561312</A><br></td></tr>
+		<tr><td><a class=r>קליין דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6760085">055-6760085</A><br></td></tr>
+		<tr><td><a class=r>קליין יצחק<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3242334">058-3242334</A><br></td></tr>
+		<tr><td><a class=r>קניאל יהודה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8544849">054-8544849</A><br></td></tr>
+		<tr><td><a class=r>קסטנר יצחק<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4130090">050-4130090</A><br></td></tr>
+		<tr><td><a class=r>קפלן מאיר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3285296">058-3285296</A><br></td></tr>
+		<tr><td><a class=r>קראוס ירוחם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3209045">058-3209045</A><br></td></tr>
+		<tr><td><a class=r>קרייסמן אהרן<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3206354">058-3206354</A><br></td></tr>
+		<tr><td><a class=r>רבי דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8538008">054-8538008</A><br></td></tr>
+		<tr><td><a class=r>רביץ אריה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7127238">052-7127238</A><br></td></tr>
+		<tr><td><a class=r>רוזנברג דוד<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4171526">050-4171526</A><br></td></tr>
+		<tr><td><a class=r>רוטנברג אברהם<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8526584">054-8526584</A><br></td></tr>
+		<tr><td><a class=r>רלב"ג שמעון<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6744336">055-6744336</A><br></td></tr>
+		<tr><td><a class=r>רסקס שמעון<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3181371">053-3181371</A><br></td></tr>
+		<tr><td><a class=r>שאג דב <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7677342">052-7677342</A><br></td></tr>
+		<tr><td><a class=r>שוורץ אלחנן <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6793428">055-6793428</A><br></td></tr>
+		<tr><td><a class=r>שועה יוסף <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-4566336">054-4566336</A><br></td></tr>
+		 		<tr><td><a class=r>שטארך נתנאל<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3217113">058-3217113</A><br></td></tr>
+		<tr><td><a class=r>שטראוס<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3279268">058-3279268</A><br></td></tr>
+		<tr><td><a class=r>שטרן אהרון<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6776449">055-6776449</A><br></td></tr>
+		<tr><td><a class=r>שיינין משה<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3212893">058-3212893</A><br></td></tr>
+		<tr><td><a class=r>שימל שמואל <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4106012">050-4106012</A><br></td></tr>
+		<tr><td><a class=r>שיף יצחק<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4140304">053-4140304</A><br></td></tr>
+		<tr><td><a class=r>שלוסברג אלעזר<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4137120">053-4137120</A><br></td></tr>
+		<tr><td><a class=r>שפירא יעקב<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6787558">055-6787558</A><br></td></tr>
+		<tr><td><a class=r>שריקי יונתן<br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8505812">054-8505812</A><br></td></tr>
+		<tr><td><a class=r>שרם ישראל <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3237467">058-3237467</A><br></td></tr>
+		<tr><td><a class=r>שרעבי אורי <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6709520">055-6709520</A><br></td></tr>
+		<tr><td><a class=r>ששון יצחק <br>שיעור ג<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3216387">058-3216387</A><br></td></tr>
+		<tr><td><a class=r>אדלר אלעזר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3147418">053-3147418</A><br></td></tr>
+		<tr><td><a class=r>אדרי משה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6733047">055-6733047</A><br></td></tr>
+		<tr><td><a class=r>אוחיון רפאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7162423">052-7162423</A><br></td></tr>
+		<tr><td><a class=r>אופנהיים יהונתן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8546557">054-8546557</A><br></td></tr>
+		<tr><td><a class=r>אורבך יונתן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6722438">055-6722438</A><br></td></tr>
+		<tr><td><a class=r>אייזן שמעון<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3218377">058-3218377</A><br></td></tr>
+		<tr><td><a class=r>אייזנבך שמעון<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3277597">058-3277597</A><br></td></tr>
+		<tr><td><a class=r>אילן מרדכי<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4108497">050-4108497</A><br></td></tr>
+		<tr><td><a class=r>אלפסי בניהו<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7654137">052-7654137</A><br></td></tr>
+		<tr><td><a class=r>בדוש משה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8560315">054-8560315</A><br></td></tr>
+		<tr><td><a class=r>בוימל שמואל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4123947">050-4123947</A><br></td></tr>
+		<tr><td><a class=r>בוסקילה אשר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3263223">058-3263223</A><br></td></tr>
+		<tr><td><a class=r>ביסקר צבי<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4170641">050-4170641</A><br></td></tr>
+		<tr><td><a class=r>בלס יצחק<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7184075">052-7184075</A><br></td></tr>
+		<tr><td><a class=r>במברגר ישראל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-3837525">052-3837525</A><br></td></tr>
+		<tr><td><a class=r>בר ששת מאיר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3210350">058-3210350</A><br></td></tr>
+		<tr><td><a class=r>ברדע ישי<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6722030">055-6722030</A><br></td></tr>
+		<tr><td><a class=r>ברוורמן אלעזר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6709014">055-6709014</A><br></td></tr>
+		<tr><td><a class=r>ברון אלחנן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4162049">053-4162049</A><br></td></tr>
+		<tr><td><a class=r>גודמן מיכאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8482804">054-8482804</A><br></td></tr>
+		<tr><td><a class=r>גונןיהושע<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6772361">055-6772361</A><br></td></tr>
+		<tr><td><a class=r>גורפינקל יוסף<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4191905">053-4191905</A><br></td></tr>
+		<tr><td><a class=r>גז אלעזר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3212686">058-3212686</A><br></td></tr>
+		<tr><td><a class=r>גלנסברג יעקב<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6746025">055-6746025</A><br></td></tr>
+		<tr><td><a class=r>גפן מאיר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3165941">053-3165941</A><br></td></tr>
+		<tr><td><a class=r>גרשון שאול<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3196166">053-3196166</A><br></td></tr>
+		<tr><td><a class=r>גרשוני אשר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6732152">055-6732152</A><br></td></tr>
+		<tr><td><a class=r>דיוויד ישראל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7686541">052-7686541</A><br></td></tr>
+		<tr><td><a class=r>דיסין דב<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3251731">058-3251731</A><br></td></tr>
+		<tr><td><a class=r>דרוק יאיר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6726600">055-6726600</A><br></td></tr>
+		<tr><td><a class=r>הופמן שמואל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4138739">050-4138739</A><br></td></tr>
+		<tr><td><a class=r>הופקוביץ שמחה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8534342">054-8534342</A><br></td></tr>
+		<tr><td><a class=r>הימלפרב בנימין<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8519428">054-8519428</A><br></td></tr>
+		<tr><td><a class=r>היניק יונתן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8596152">054-8596152</A><br></td></tr>
+		<tr><td><a class=r>הרטמן שמואל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3124615">053-3124615</A><br></td></tr>
+		<tr><td><a class=r>הרשקוביץ אלעזר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3113770">053-3113770</A><br></td></tr>
+		<tr><td><a class=r>ואקנין יאיר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8456443">054-8456443</A><br></td></tr>
+		<tr><td><a class=r>וינר משה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4838336">053-4838336</A><br></td></tr>
+		<tr><td><a class=r>זאיד משה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8526504">054-8526504</A><br></td></tr>
+		<tr><td><a class=r>זולדן אלחנן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6761025">055-6761025</A><br></td></tr>
+     		<tr><td><a class=r>זילבר שלמה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6792251">055-6792251</A><br></td></tr>
+		<tr><td><a class=r>זינגר רפאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8549272">054-8549272</A><br></td></tr>
+		<tr><td><a class=r>זכאי אברהם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3180296">053-3180296</A><br></td></tr>
+		<tr><td><a class=r>חדד יעקב<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:08-9742483">08-9742483</A><br></td></tr>
+		<tr><td><a class=r>טובי יונתן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4110566">050-4110566</A><br></td></tr>
+		<tr><td><a class=r>טויטו יהודה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8415027">054-8415027</A><br></td></tr>
+		<tr><td><a class=r>טולידאנו בן ציון<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6762961">055-6762961</A><br></td></tr>
+		<tr><td><a class=r>טולידאנו חיים<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8544497">054-8544497</A><br></td></tr>
+		<tr><td><a class=r>טולנפלד אריה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3292201">058-3292201</A><br></td></tr>
+		<tr><td><a class=r>יונג יהושע<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3250039">058-3250039</A><br></td></tr>
+		<tr><td><a class=r>כהן דוד<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4133312">053-4133312</A><br></td></tr>
+		<tr><td><a class=r>כהן יוסף<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8441023">054-8441023</A><br></td></tr>
+		<tr><td><a class=r>כוכב לב יהודה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6762050">055-6762050</A><br></td></tr>
+		<tr><td><a class=r>לאופר אברהם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6778277">055-6778277</A><br></td></tr>
+		<tr><td><a class=r>לבציון יצחק<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6764212">055-6764212</A><br></td></tr>
+		<tr><td><a class=r>לוין מיכאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3209911">058-3209911</A><br></td></tr>
+		<tr><td><a class=r>לוינטוב לייב<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3253600">058-3253600</A><br></td></tr>
+		<tr><td><a class=r>לויסון שמשון<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4130955">050-4130955</A><br></td></tr>
+		<tr><td><a class=r>לחובר יצחק<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8563618">054-8563618</A><br></td></tr>
+		<tr><td><a class=r>לנדמן יונתן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7144139">052-7144139</A><br></td></tr>
+		<tr><td><a class=r>לסר נפתלי<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3154859">053-3154859</A><br></td></tr>
+		<tr><td><a class=r>לרנר יהודה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4162799">053-4162799</A><br></td></tr>
+		<tr><td><a class=r>מאיר יהושע<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4197644">053-4197644</A><br></td></tr>
+		<tr><td><a class=r>מונק אלעזר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8548294">054-8548294</A><br></td></tr>
+		<tr><td><a class=r>מחפוד מאיר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7179527">052-7179527</A><br></td></tr>
+		<tr><td><a class=r>מיטלמן חיים<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6775272">055-6775272</A><br></td></tr>
+		<tr><td><a class=r>נוסבכר אברהם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3228876">058-3228876</A><br></td></tr>
+		<tr><td><a class=r>נחמני ישראל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8560514">054-8560514</A><br></td></tr>
+		<tr><td><a class=r>סגל חנוך<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8567453">054-8567453</A><br></td></tr>
+		<tr><td><a class=r>סגל ישראל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3227092">058-3227092</A><br></td></tr>
+		<tr><td><a class=r>סולובייצ'יק יצחק<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-2089018">052-2089018</A><br></td></tr>
+		<tr><td><a class=r>סמוטני משה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6722321">055-6722321</A><br></td></tr>
+		<tr><td><a class=r>סמט ירוחם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3237952">058-3237952</A><br></td></tr>
+		<tr><td><a class=r>סעדון ידידיה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3260208">058-3260208</A><br></td></tr>
+		<tr><td><a class=r>ספקטור בן ציון<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6793484">055-6793484</A><br></td></tr>
+		<tr><td><a class=r>ספרא יוסף<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3262832">058-3262832</A><br></td></tr>
+		<tr><td><a class=r>עזר רפאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8555094">054-8555094</A><br></td></tr>
+		<tr><td><a class=r>עסיס דוד<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3213593">058-3213593</A><br></td></tr>
+		<tr><td><a class=r>פולטוב שמואל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3176053">053-3176053</A><br></td></tr>
+		<tr><td><a class=r>פוקסבומר אהרן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8534649">054-8534649</A><br></td></tr>
+		<tr><td><a class=r>פורגס ישראל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8410569">054-8410569</A><br></td></tr>
+		<tr><td><a class=r>פיינברג שלום<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3272730">058-3272730</A><br></td></tr>
+		<tr><td><a class=r>פיינגולד שלמה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6736845">055-6736845</A><br></td></tr>
+		<tr><td><a class=r>פינקלשטיין יעקב<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3257909">058-3257909</A><br></td></tr>
+		<tr><td><a class=r>פיק איתמר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6746353">055-6746353</A><br></td></tr>
+		<tr><td><a class=r>פנט נתנאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6738281">055-6738281</A><br></td></tr>
+		<tr><td><a class=r>פרוידיגר דוד<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3200785">058-3200785</A><br></td></tr>
+		<tr><td><a class=r>פרידמן אריה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4132913">053-4132913</A><br></td></tr>
+		<tr><td><a class=r>פרידמן עקיבא<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3255369">058-3255369</A><br></td></tr>
+		<tr><td><a class=r>פריינד אלעזר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6703401">055-6703401</A><br></td></tr>
+		<tr><td><a class=r>פרנס ישי<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6749984">055-6749984</A><br></td></tr>
+		 		<tr><td><a class=r>פרנק אביגדור<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3244953">058-3244953</A><br></td></tr>
+		<tr><td><a class=r>פרץ שמעון<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3108163">053-3108163</A><br></td></tr>
+		<tr><td><a class=r>ציטיאט יהודה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6758095">055-6758095</A><br></td></tr>
+		<tr><td><a class=r>צייגר צבי<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6787559">055-6787559</A><br></td></tr>
+		<tr><td><a class=r>קארפ אהרן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3178927">053-3178927</A><br></td></tr>
+		<tr><td><a class=r>קהן שמואל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4106843">050-4106843</A><br></td></tr>
+		<tr><td><a class=r>קוברניק בנימין<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8527891">054-8527891</A><br></td></tr>
+		<tr><td><a class=r>קופמן בנימין<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6721965">055-6721965</A><br></td></tr>
+		<tr><td><a class=r>קורלנסקי טוביה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4141669">053-4141669</A><br></td></tr>
+		<tr><td><a class=r>קליימן אביגדור<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3201126">058-3201126</A><br></td></tr>
+		<tr><td><a class=r>קפיטס בנימין<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-7869958">058-7869958</A><br></td></tr>
+		<tr><td><a class=r>רוב יעקב<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8565418">054-8565418</A><br></td></tr>
+		<tr><td><a class=r>רוזין יוסף<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4162133">050-4162133</A><br></td></tr>
+		<tr><td><a class=r>רוזנבלום אורי<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7673927">052-7673927</A><br></td></tr>
+		<tr><td><a class=r>רוזנטל דוד<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3182613">053-3182613</A><br></td></tr>
+		<tr><td><a class=r>רוזנצוויג אליהו<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8449726">054-8449726</A><br></td></tr>
+		<tr><td><a class=r>רוט אריאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:050-4138599">050-4138599</A><br></td></tr>
+		<tr><td><a class=r>רייס אהרן<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-3199000">053-3199000</A><br></td></tr>
+		<tr><td><a class=r>שולם דניאל<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6748002">055-6748002</A><br></td></tr>
+		<tr><td><a class=r>שחטר אברהם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:053-4126007">053-4126007</A><br></td></tr>
+		<tr><td><a class=r>שטיינוביץ אליהו<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6755501">055-6755501</A><br></td></tr>
+		<tr><td><a class=r>שטיינר משה<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:052-7662944">052-7662944</A><br></td></tr>
+		<tr><td><a class=r>שטרן אברהם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:058-3257193">058-3257193</A><br></td></tr>
+		<tr><td><a class=r>שטרן אליעזר<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8526902">054-8526902</A><br></td></tr>
+		<tr><td><a class=r>שיק אברהם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:055-6738516">055-6738516</A><br></td></tr>
+		<tr><td><a class=r>שנברגר מנחם<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:054-8556848">054-8556848</A><br></td></tr>
+		<tr><td><a class=r>שניאור דוד<br>שיעור ב<br><a style="text-decoration:none;color:red;font-size:14px;" href="tel:000-0000000">000-0000000</A><br></td></tr>
+		
+</table>
+
+
+</div>
+
+<div class="return">
+	<a class="new" href="מיר ברכפלד.html" 
+	target="_self"
+	style="
+	color:rgb(43, 0, 255);
+	padding:20px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;">
+	לדף הבית</a>
+</div>
+<div class="mazel">
+    <a class="new" href="מאורסים.html" target="_self" style="
+    color:rgb(43, 0, 255);
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    ">לחתונות</a></div>
+
+
+<!-------------------------------------------------------->
+
+
+</body>
+</html>
+
+
+<!-- Injection By NetFree -->
+<script src="https://netfree.link/injection-script/go-payment.js" type="text/javascript" async  ></script>
+<script src="https://netfree.link/injection-script/popup-card-init.js" type="text/javascript" async  ></script>
