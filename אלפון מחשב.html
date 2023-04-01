@@ -235,7 +235,7 @@ function alert(ag) {
 
 function StartSearch() {
 	var iinp = document.getElementById("myInput").value;
-	if (iinp.length < 3) { 
+	if (iinp.length < 2) { 
 		document.getElementById("myInput").value = "יש להזין מינימום 3 תווים"
 		return; 
 	}
@@ -309,9 +309,9 @@ document.getElementById('myBotbox1').style.display='block';">
 		<p style="margin: 0px; font-size:23px;"> תשפ"ג </p>
 	<br>
 	
-    <input id="myInput" Class="nkbutton4" type="text" onchange="StartSearch()" onfocus="clearInput()"  placeholder="הזן לפחות 3 תווים" title="הזן שם פרטי/משפחה/טלפון/כתובת/מייל" value="הזן שם או מספר" >
-	<input type="button" value="חפש" onclick="StartSearch()">  </input>
-	<p style="margin: 0px; font-size:14px;">הזן שם פרטי/ שם משפחה/ טלפון/ וועד <br>הזן מינימום 3 תווים ולחץ על אישור</p>
+    <input id="myInput" Class="nkbutton4" type="text" onchange="StartSearch()" onfocus="clearInput()"  placeholder="הזן לפחות 2 תווים" title="הזן שם פרטי/משפחה/טלפון/כתובת/מייל" value="הזן שם או מספר" >
+	<input type="button" value="חפש" onclick="StartSearch()" style="width: 10%; color:#0080ff">  </input>
+	<p style="margin: 0px; font-size:14px;">הזן שם פרטי/ שם משפחה/ טלפון/ וועד <br>הזן מינימום 2 תווים ולחץ על אישור</p>
 <br><p style="margin: 0px; font-size:12px;">&copy; כל הזכויות שמורות</p>
 	<p style="margin: 0px; font-size:10px;">גירסה 1.0.0<BR><BR>
 </div>
